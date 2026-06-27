@@ -13,17 +13,25 @@
       text-align: center;
     }
 
-    .hero {
-      height: 70vh;
-      background-image: url("image_back.jpg");
-      background-size: cover;
-      background-position: center;
-    }
 
     .menu {
-      margin-bottom: 70vh;
-      margin-left: 70vh;
-    }
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+    
+.hero {
+  height: 70vh;
+  background-image: url("image_back.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
 
     .btn {
   background: rgba(255,255,255,0.1);
@@ -41,20 +49,17 @@
   transform: scale(1.05);
 }
 
-  h1{margin-top: -50vh;}
-  p{margin-top: -55vh;}
 
   </style>
 </head>
 
 <body>
 
-  <div class="hero"></div>
-  
-
   <h1><i>Květiny Cappu</i></h1>
 
   <p>Rodinná firma s dlouholetou tradicí vázání květin</p>
+
+<div class="hero">
 
   <div class="menu">
     <a href="about.html"><button class="btn">O nás</button></a>
@@ -62,6 +67,8 @@
     <a href="contacts.html"><button class="btn">Kontakty</button></a>
     <a href="reviews.html"><button class="btn">Zkušenosti</button></a>
   </div>
+
+</div>
 
 </body>
 </html>
