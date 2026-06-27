@@ -2,34 +2,68 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title><i>Květiny Cappu</i></title>
+  <title>Květiny Cappu</title>
 
   <style>
     body {
       margin: 0;
       font-family: Times;
-     
       background: #d8bfd8;
-      color: White;
-      text-align: center;
+      color: white;
     }
 
-
-      .hero {
+    .hero {
       height: 20vh;
       background-image: url("blue_bg.jpg");
       background-size: cover;
       background-position: center;
-      }
+      
+  -webkit-mask-image: radial-gradient(circle, black 70%, transparent 100%);
+  mask-image: radial-gradient(circle, black 70%, transparent 100%);
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
 
-
-    
-
-    .menu {
-      margin-top: 20px;
+      padding: 20px;
     }
 
-    .btn {
+    .under_menu{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+    padding-left: 30vh;
+    padding-right: 30vh;
+    text-align: center;
+      
+      padding: 20px;
+    }
+    
+    .under_menu h1 {
+      margin: 0;
+      font-size: 35px;
+    }
+
+    .under_menu p {
+      margin-top: 10px;
+      font-size: 25px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+
+        .btn {
   background: rgba(255,255,255,0.1);
   color: white;
   border: 1px solid rgba(255,255,255,0.2);
@@ -38,27 +72,39 @@
   border-radius: 12px;
   cursor: pointer;
   transition: 0.2s;
-}
+  }
+  
+  .btn:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.05);
+  }
 
-.btn:hover {
-  background: rgba(255,255,255,0.2);
-  transform: scale(1.05);
-}
   </style>
 </head>
 
 <body>
 
-  <div class="hero"></div>
+  <div class="hero">
 
-  <h1><i>O náš</i></h1>
-  <p>Rodinná firma s dlouholetou tradicí vázání květin</p>
+  </div>
 
   <div class="menu">
-    <a href="index.html"><button class="btn">Domů</button></a>
+    <a href="about.html"><button class="btn">O nás</button></a>
     <a href="products.html"><button class="btn">Produkty</button></a>
     <a href="contacts.html"><button class="btn">Kontakty</button></a>
-    <a href="reviews.html"><button class="btn">Zkušenosti</button></a>
+    <a href="index.html"><button class="btn">Domů</button></a>
+  </div>
+
+  <div class="under_menu">
+    <h1><i>O nás</i></h1>
+    <p>Jsme rodinná firma s dlouholetou tradicí od roku 2023, která se specializuje na vázání a aranžování květin pro každou příležitost. Naším cílem je přinášet radost, emoce a krásu do každodenního života prostřednictvím čerstvých květin a originálních vazeb.
+Na trhu působíme jako moderní květinářství, které spojuje tradiční floristické postupy s aktuálními trendy v designu. Zakládáme si na osobním přístupu ke každému zákazníkovi, pečlivém výběru květin a důrazu na detail. Každá kytice, kterou vytvoříme, je originál – navržený přesně podle přání klienta nebo příležitosti, pro kterou je určena.</p>
+    <h1><i>Historie</i></h1>
+    <p>Naše firma vznikla v roce 2023 z jednoduché myšlenky – dělat květiny jinak a pro přátelé. Zakladatelé, kteří neměli mnoho zkušeností s floristikou i designem, se rozhodli vytvořit značku, která bude kombinovat estetiku, kvalitu a dostupnost.
+Začínali jsme v malém bytě s omezeným sortimentem, kde jsme vázali kytice pro blízké a první zákazníky z okolí. Díky pozitivním ohlasům a rostoucí poptávce jsme postupně rozšířili nabídku i provoz. 
+
+Věříme, že květiny nejsou jen dekorace, ale způsob, jak vyjádřit emoce, které se těžko říkají slovy. Proto ke každé objednávce přistupujeme s respektem, kreativitou a snahou vytvořit něco výjimečného.
+    </p>
   </div>
 
 </body>
