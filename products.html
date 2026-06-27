@@ -84,15 +84,16 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 30vw;
+  margin: 0 auto;
 }
 
 .item {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: center;
-  background: white;
+  background: rgba(0,0,0,0.3);
+  padding: 15px;
+  border-radius: 12px;
 }
     
 .item img {
@@ -102,13 +103,6 @@
   border-radius: 8px;
 }
 
-.item h3 {
-  margin: 10px 0 5px;
-}
-
-.item p {
-  margin: 5px 0;
-}
     
     .special {
   border: 2px solid gold;
@@ -136,71 +130,62 @@
 
   <div class="grid">
 
-  <div class="item">
-    <h3>Fialky</h3>
-    <img src="img/fialky.jpg" alt="Fialky">
-    <p>Skladem (0 ks)</p>
-  </div>
+    <div class="item">
+      <h3>Fialky</h3>
+      <p>Skladem (0 ks)</p>
+    </div>
 
-  <div class="item">
-    <h3>Rododendrón</h3>
-    <img src="img/rododendron.jpg" alt="Rododendrón">
-    <p>Skladem (0 ks)</p>
-  </div>
+    <div class="item">
+      <h3>Rododendróny</h3>
+      <p>Skladem (0 ks)</p>
+    </div>
 
-  <div class="item">
-    <h3>Sedmikrásky</h3>
-    <img src="img/sedmikrasky.jpg" alt="Sedmikrásky">
-    <p>Skladem (0 ks)</p>
-  </div>
+    <div class="item">
+      <h3>Sedmikrásky</h3>
+      <p>Skladem (0 ks)</p>
+    </div>
 
-  <div class="item">
-    <h3>Růže</h3>
-    <img src="img/ruze.jpg" alt="Růže">
-    <p>Skladem (0 ks)</p>
-  </div>
+    <div class="item">
+      <h3>Růže</h3>
+      <p>Skladem (0 ks)</p>
+    </div>
 
-  <div class="item">
-    <h3>Kosatce</h3>
-    <img src="img/kosatce.jpg" alt="Kosatce">
-    <p>Skladem (0 ks)</p>
-  </div>
+    <div class="item">
+      <h3>Kosatce</h3>
+      <p>Skladem (0 ks)</p>
+    </div>
 
-  <div class="item">
-    <h3>Denivky</h3>
-    <img src="img/denivky.jpg" alt="Denivky">
-    <p>Skladem (0 ks)</p>
-  </div>
+    <div class="item">
+      <h3>Denivky</h3>
+      <p>Skladem (0 ks)</p>
+    </div>
 
-  <div class="item">
-    <h3>Talibány</h3>
-    <img src="img/talibany.jpg" alt="Talibány">
-    <p>Skladem (0 ks)</p>
-  </div>
+    <div class="item">
+      <h3>Talibány</h3>
+      <p>Skladem (0 ks)</p>
+    </div>
 
-  <div class="item">
-    <h3>Pampelišky</h3>
-    <img src="img/pampelisky.jpg" alt="Pampelišky">
-    <p>Skladem (0 ks)</p>
-  </div>
+    <div class="item">
+      <h3>Pampelišky</h3>
+      <p>Skladem (0 ks)</p>
+    </div>
 
-  <div class="item special">
-    <h3>Pivoňky</h3>
-    <img src="img/pivonky.jpg" alt="Pivoňky">
-    <p>Skladem (0 ks)</p>
-  </div>
+    <!-- SPECIAL ITEM -->
+    <div class="item special">
+      <h3>Pivoňky</h3>
+      <p>Skladem (1 ks)</p>
+      <button class="btn">Objednat</button>
+    </div>
 
-  <div class="item">
-    <h3>Slunečnice</h3>
-    <img src="img/slunecnice.jpg" alt="Slunečnice">
-    <p>Skladem (0 ks)</p>
-  </div>
+    <div class="item">
+      <h3>Slunečnice</h3>
+      <p>Skladem (0 ks)</p>
+    </div>
 
-  <div class="item">
-    <h3>Tulipány</h3>
-    <img src="img/tulipany.jpg" alt="Tulipány">
-    <p>Skladem (0 ks)</p>
-  </div>
+    <div class="item">
+      <h3>Tulipány</h3>
+      <p>Skladem (0 ks)</p>
+    </div>
 
   </div>
 </div>
