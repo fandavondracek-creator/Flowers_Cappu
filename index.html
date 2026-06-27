@@ -2,64 +2,75 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title><i>Květiny Cappu</i></title>
+  <title>Květiny Cappu</title>
 
   <style>
     body {
       margin: 0;
       font-family: Times;
       background: #e6e6fa;
-      color: White;
-      text-align: center;
+      color: white;
     }
 
+    .hero {
+      height: 70vh;
+      background-image: url("image_back.jpg");
+      background-size: cover;
+      background-position: center;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      padding: 20px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 48px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+
+    .hero p {
+      margin-top: 10px;
+      font-size: 18px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
 
     .menu {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-}
-    
-.hero {
-  height: 70vh;
-  background-image: url("image_back.jpg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
 
     .btn {
-  background: rgba(255,255,255,0.1);
-  color: white;
-  border: 1px solid rgba(255,255,255,0.2);
-  padding: 10px 18px;
-  backdrop-filter: blur(10px);
-  border-radius: 12px;
-  cursor: pointer;
-  transition: 0.2s;
-}
+      background: rgba(0,0,0,0.4);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 10px 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
 
-.btn:hover {
-  background: rgba(255,255,255,0.2);
-  transform: scale(1.05);
-}
-
+    .btn:hover {
+      background: rgba(0,0,0,0.6);
+      transform: scale(1.05);
+    }
 
   </style>
 </head>
 
 <body>
 
-  <h1><i>Květiny Cappu</i></h1>
-
-  <p>Rodinná firma s dlouholetou tradicí vázání květin</p>
-
-<div class="hero">
+  <div class="hero">
+    <h1><i>Květiny Cappu</i></h1>
+    <p>Rodinná firma s dlouholetou tradicí vázání květin</p>
+  </div>
 
   <div class="menu">
     <a href="about.html"><button class="btn">O nás</button></a>
@@ -67,8 +78,6 @@
     <a href="contacts.html"><button class="btn">Kontakty</button></a>
     <a href="reviews.html"><button class="btn">Zkušenosti</button></a>
   </div>
-
-</div>
 
 </body>
 </html>
